@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>Maintenance Tracker App - Users</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="myjs.js"></script>
+
+        
+    </head>
+    <body id="body1">
+        
+        <header>
+            
+            <a href="index.html"><h1>Maintenance Tracker</h1></a>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="#" onclick="myRequest()">New Request</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+          <div id="top">
+            <h2 id="users_h">Welcome to your requests</h2>
+            <p>You can view all requests made by you here</p>
+            
+            
+
+            
+            <div id="form1" style="overflow:hidden;">
+                <!-- Popup Div Starts Here -->
+                <div id="popupContact">
+                    <!-- Contact Us Form -->
+                    <form action="" id="form" method="post" name="form" >
+                        <img id="close" src="images/Cancel-128.png" onclick ="div_hide()">
+                        <h1 style="color: black; text-decoration: underline; text-align: center">New Request Form   </h1></br>
+                        <p><label>Name:</label><input id="name" name="name" placeholder="Name" type="text" oninvalid="alert('You must fill out all fields');" required></p>
+                        <p><label>Department:</label><input id="department" name="department" placeholder="Department" type="text" oninvalid="alert('You must fill out all fields');" required></p>
+                        <p><label>Request Type:</label>
+                            <select name="option" id="request_type" oninvalid="alert('You must fill out all fields');" required>
+                                <option selected>Maintenance</option>
+                                <option>Repairs</option>
+                            </select>
+                        </p>
+                        <p><label>Description:</label><textarea id="description" name="description" placeholder="Description" oninvalid="alert('You must fill out all fields');" required></textarea></p>
+                        <button id="submit" onclick="addUserRequests()">Send</button>
+                    </form>
+                </div>
+                <!-- Popup Div Ends Here -->
+            </div>
+                
+                
+
+                
+            
+        </div>
+        <div class="main-content">
+            <div id="navbar">
+                <label for="filter">Order By:</label>
+                <select id="filter">
+                    <option value='1'>Approved</option>
+                    <option value='2'>Disapproved</option>
+                    <option value='3'>Resolved</option>
+                    <option value='4'>Pending</option>
+                    <option value='4'>Most recent</option>
+                </select>
+            </div>
+            <div id="main">
+                <table>
+                    <tr>
+                        <th>Date</th>
+                        <th>Request Type</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td id="date">20/12/2018</td>
+                            <td id="req1">Maitenance</td>
+                            <td id="des">My ac needs cleaning</td>
+                            <td id="status">Approved</td>
+                        </tr>
+                         <tr>
+                            <td id="date">20/08/2018</td>
+                            <td id="req1">Repairs</td>
+                            <td id="des">My PC needs repairing</td>
+                            <td id="status">Pending</td>
+                        </tr>
+                         <tr>
+                            <td id="date">20/05/2018</td>
+                            <td id="req1">Maitenance</td>
+                            <td id="des">My ac needs cleaning</td>
+                            <td id="status">Rejected</td>
+                        </tr>
+                    </tbody>
+                </table>
+        
+            </div>
+            <div id="content">
+                <div id="back1">
+                    <img id="back" src="images/images.png" onclick ="div_hide1()">
+        
+                        
+            </div>
+        </div>
+        
+        
+    </body>
+</html>

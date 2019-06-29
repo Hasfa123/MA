@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Maintenance Tracker App - Admin</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="myjs.js"></script>
+    </head>
+    <body id="body1">
+        <header>
+            
+            <a href="index.html"><h1>Maintenance Tracker</h1></a>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="main-content">
+            <div id="navbar">
+                <h3>Requests</h3>
+                <label for="filter">Order By:</label>
+                <select id="filter" name="filter">
+                    <option value='1'>Approved</option>
+                    <option value='2'>Disapproved</option>
+                    <option value='3'>Resolved</option>
+                    <option value='4'>Pending</option>
+                    <option value='4'>Most recent</option>
+                </select>
+                
+                <input type="search" id="search" placeholder="Search for Name here...">
+            </div>
+            <div id="main">
+                <table>
+                    <tr>
+                        <th id="date">Date</th>
+                        <th id="name1">Name</th>
+                        <th id="dep1">Department</th>
+                        <th id="req1">Request Type</th>
+                        <th id="des1">Description</th>
+                        <th id="status">Status</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td id="date">20/12/2018</td>
+                            <td id="name1">Hasifa</td>
+                            <td id="dep1">IT</td>
+                            <td id="req1">Maintenance</td>
+                            <td id="des">My AC needs cleaning</td>
+                            <td id="status">
+                                Approved
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="date">20/12/2018</td>
+                            <td id="name1">Hasifa</td>
+                            <td id="dep1">IT</td>
+                            <td id="req1">Maintenance</td>
+                            <td id="des">My AC needs cleaning</td>
+                            <td id="status">
+                                Approved
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="date">20/12/2018</td>
+                            <td id="name1">Hasifa</td>
+                            <td id="dep1">IT</td>
+                            <td id="req1">Maintenance</td>
+                            <td id="des">My AC needs cleaning</td>
+                            <td id="status">
+                                Approved
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="content">
+                <div id="back1">
+                    <img id="back" src="images/images.png" onclick ="div_hide1()">
+                </div>
+                <div id="msg1">
+                    <p><h4>Repairs request from James</h4></p>
+                    <p>My pc has broken down in office L40</p>
+                </div>
+        
+                        
+            </div>
+        </div>
+        
+        
+            
+    
+    
+        
+        
+    </body>
+</html>
